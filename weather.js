@@ -1,7 +1,6 @@
 
 const button = document.getElementById("generarTemperatura");
 
-// Parte 1: Crear una función constructora para el objeto Weather
 function Weather(temperaturaMinima, temperaturaMaxima, clima, velocidadViento) {
     this.temperaturaMinima = temperaturaMinima; 
     this.temperaturaMaxima = temperaturaMaxima; 
@@ -30,7 +29,6 @@ function generarValoresAleatorios() {
 function generarHTML(){
     console.log("Hola");
 
-    // Parte 3: Guardar datos de la temperatura de una semana en un array
     const temperaturasSemana = Array.from({ length: 7 }, () => {
         const valores = generarValoresAleatorios();
         return new Weather(
